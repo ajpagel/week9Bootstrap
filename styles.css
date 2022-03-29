@@ -1,0 +1,58 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:fantasy;
+    color: #222;
+
+}
+
+.navbar{
+    padding: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+
+}
+
+.nav-item {
+    padding: 25px;
+}
+
+.nav-link.active, .nav-link:hover{
+    color: tan!important;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+.nav-link{
+    font-size: 25px;
+    color: white !important;
+}
+/*max-height will make it so carousel does not expand */
+.carousel-inner{
+   max-height: 600px!important;
+}
+
+footer{
+    background-color:#222;
+    padding: 10px;
+}
+
+.social a{
+    font-size: 4.5em;
+    padding: 3rem;
+}
+/*change color for social media buttons*/
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-instagram{
+    color: #517fa4;
+}
+
+/*change color for hovering over social media*/
+.fa-facebook:hover, 
+.fa-instagram:hover{
+    color: #d5d5d5;
+}
