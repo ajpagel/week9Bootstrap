@@ -14,18 +14,27 @@
 
 
 <!--navigation-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
             <a class="navbar-brand" href="index.html">ReelLife</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <!--created the hamburger icon for smaller screens and added id to div class navbar-collapse-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="nav-item" ><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
-                      <li class="nav-item"><a href="Aboutme.html" class="nav-link">About me</a></li>
-                      <li><a class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+            <!-- id nav enu is targeting #navmenu above-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!--ms-auto moves links to the right-->
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item" >
+                          <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="Aboutme.html" class="nav-link">About me </a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="Blog.html" class="nav-link">Blog</a>
+                      </li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +42,7 @@
     </div>
 </nav>
 
-<!--carousel-->
+<!--carousel/showcase area-->
 
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

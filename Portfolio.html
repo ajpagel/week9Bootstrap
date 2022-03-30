@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</head>
+<body>
+<!--navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <a class="navbar-brand" href="index.html">ReelLife</a>
+            <!--created the hamburger icon for smaller screens and added id to div class navbar-collapse-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- id nav enu is targeting #navmenu above-->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!--ms-auto moves links to the right-->
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item" >
+                          <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="Aboutme.html" class="nav-link">About me </a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="Blog.html" class="nav-link">Blog</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</nav>
+
+<!--SHOWCASE-->
+<!--pt=padding top pb=padding bottom-->
+
+<section class="bg-dark text-light p-5 text-center text-sm-start">
+    <!-- put in container so this is not again the side of screen-->
+    <div class="container">
+        <!-- d-flex use flex on all sizes add breakpoint like sm or lg-->
+        <!-- flex box-->
+        <!--added align-item-center and justify-content-between for space between two rows-->
+        <div class="d-md-flex align-items-center justify-content-between">
+            <div>
+                <h1>Welcome to my <span class="text-warning"> portfolio </span></h1>
+                <!--added my margin y axis-->
+                <p class="lead my-4">Here you will find all my photographs that I have taken. 
+                    Stay tuned for some great pictures!
+                </p>
+                <button class="btn btn-light btn-lg">Click Here for the Portfolio</button>
+            </div>
+            <!--bound into container with im-fluid and make smaller with size w-50 then added d-none d-sm-block so picture does not show in small screens-->
+            <img src="images/vintage-camera-clipart-art-vector-9729541.jpeg" class="img-fluid w-25 d-none d-sm-block" alt="camera clipart">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

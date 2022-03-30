@@ -12,24 +12,57 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
                 <a class="navbar-brand" href="index.html">ReelLife</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <!--created the hamburger icon for smaller screens and added id to div class navbar-collapse-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item" ><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
-                          <li class="nav-item"><a href="Aboutme.html" class="nav-link">About me</a></li>
-                          <li><a class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+                <!-- id nav enu is targeting #navmenu above-->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!--ms-auto moves links to the right-->
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item" >
+                              <a href="Portfolio.html" class="nav-link">Portfolio</a>
+                            </li>
+                          <li class="nav-item">
+                              <a href="Aboutme.html" class="nav-link">About me </a>
+                            </li>
+                          <li class="nav-item">
+                              <a href="Blog.html" class="nav-link">Blog</a>
+                          </li>
                         </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+    </nav>
+
+<!--Showcase-->
+
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <!-- put in container so this is not again the side of screen-->
+        <div class="container">
+            <!-- d-flex use flex on all sizes add breakpoint like sm or lg-->
+            <!-- flex box-->
+            <!--added align-item-center and justify-content-between for space between two rows-->
+            <div class="d-md-flex align-items-center justify-content-between">
+                <div>
+                    <h1>All things <span class="text-warning"> life </span></h1>
+                    <!--added my margin y axis-->
+                    <p class="lead my-4">Get ready for an epic adventure in my life.
+                    </p>
+                </div>
+                <!--bound into container with im-fluid and make smaller with size w-50 then added d-none d-sm-block so picture does not show in small screens-->
+                <img src="images/market-your-blog-curvearro.png" class="img-fluid w-25 d-none d-sm-block" alt="camera clipart">
             </div>
-         </nav>
-    </div>
-</nav>
+        </div>
+    </section>
+
+<!--Subscribe to blog-->
+
     
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
